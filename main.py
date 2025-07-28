@@ -1,5 +1,6 @@
 from stack import Stack
 from stackPostfixExp import infix_to_postfix, infix_to_prefix, post_pre_to_infix
+from queueStr import HeadfixQueue
 
 
 def main():
@@ -30,3 +31,12 @@ if __name__ == "__main__":
     stack.display()
     print("Popped item: ",stack.pop())
     stack.display()
+
+    myqueue = HeadfixQueue()
+    myqueue.enqueue(1)
+    myqueue.enqueue(2)
+    myqueue.display()
+    print(myqueue.size())
+    print("Dequeue : ",myqueue.dequeue())
+    myqueue.display()
+    print(myqueue.size())
