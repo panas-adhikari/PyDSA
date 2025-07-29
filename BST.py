@@ -18,11 +18,12 @@ class BinarySearchTree:
             print("Data not found")
             return
         if data< root.data:
-            self.search(root.left,data)
+            return self.search(root.left,data)
         elif data>root.data:
-            self.search(root.right,data)
+            return self.search(root.right,data)
         if data == root.data:
             print("Data found")
+            return
     
 def sample_use():    
     root = None 
